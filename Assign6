@@ -1,0 +1,54 @@
+1) Can you overload a method with same return type.? Explain your answer with proper logic.
+
+Yes, Methods having same return type can be overloaded but the agument list must be different. If we want to use method overloading feature of java then we can have multiple methods with same name and same return type but must differ in their argument list.
+If we keeps same return type and argument list is also same then the compiler will throw an error at compile time.
+A screenshot is attached to support the statement.
+package acadgild;
+import java.util.*;
+
+	public class acad
+	{
+	   public static void main(String args[])
+	   {
+	       System.out.println(display( 51 ));
+	       System.out.println(display( 51,54 ));
+	   }
+	   public static int display(int num)
+	   {
+	       System.out.println(" first definition of method disp");
+	       num=num+10;
+	       return num;
+	   }
+	   public static int display(int num,int num2)
+	   {
+	       System.out.println("second definition of method disp" );
+	       num2=num2+num;
+	       return num2;
+	   }
+	}
+  
+  2) Write a program in java using Arrays, that sorts the element in descending order.
+package acadgild;
+import java.util.*;
+
+	public class acad
+	{
+	   public static void main(String args[])
+	   {
+	      Scanner sc=new Scanner(System.in);
+	      int arr[]=new int[5];
+	      for(int i=0;i<5;i++)
+	      {
+	    	  arr[i]=sc.nextInt();
+	      }
+	      Arrays.sort(arr);
+	      for(int i=0;i<5;i++)
+	    	  
+	      {
+	    	  System.out.println(arr[i]);
+	      }
+	      
+	   }
+	 
+	  
+	}
